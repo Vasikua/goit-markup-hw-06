@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Form</title>
+</head>
+<body> 
+    <div class="backdrop">
+        <div class="modal">
+            <form class="contact-form">
+                <label class="contact-form-title">Leave your contacts and we will call you back</label>
+                <label class="contact-form-label">
+                    Name
+            
+                    <input class="contact-form-input" type="text" name="user_name" placeholder="Jimm" required>
+                </label>
+                <label class="contact-form-label">
+                    Phone
+            
+                    <input class="contact-form-input" type="tel" name="user_phone_number" placeholder="222-555-11-11" required>
+                </label>
+                <label class="contact-form-label">
+                    Email
+            
+                    <input class="contact-form-input" type="email" name="user_email" placeholder="email@email.com" required>
+                </label>
+                <label class="contact-form-label" type="comment"> Comment
+            
+                    <textarea name="Comment" placeholder="Text input" class="text-area"></textarea>
+                </label>
+                <input type="checkbox" name="" id="" class="checkbox">
+                <label class="contact-form-label">
+                    I accept the terms and conditions of the Privacy Policy
+                </label>
+                <div class="form-conteiner-button">
+                    <button class="form-button" type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+            
+        
+</body>
+</html>
