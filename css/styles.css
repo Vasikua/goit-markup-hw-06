@@ -782,7 +782,7 @@ ol {
 .review-form-checkbox-own-icon {
   justify-content: center;
   align-items: center;
-  fill: #f4f4fd;
+  fill: #000;
 }
 
 .review-form-field-checkbox:checked
