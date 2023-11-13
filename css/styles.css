@@ -350,6 +350,7 @@ ol {
   }
 
   .our-team-list {
+    align-items: center;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -774,7 +775,17 @@ ol {
 
   /*=========================== tablet our team section style  E N D ===================*/
 }
-
+@media screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (min-device-pixel-ratio: 2) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office\ @2x.jpg);
+  }
+}
 /* =================  desctop style@ ========================*/
 /* =================  desctop heder style@ ========================*/
 
