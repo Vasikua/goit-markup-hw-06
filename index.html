@@ -40,6 +40,12 @@
                     </li>
                 </ul>
             </nav>
+            <button class="mobile-menu-btn">
+                <svg class="mobile-menu-btn-icon" width="24" height="24" >
+                    <use href="./images/icons.svg#icon-burger"></use>
+
+                </svg>
+            </button>
             <address class="address">
                 <ul class="address-ul">
                     <li class="list-li"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
@@ -49,24 +55,19 @@
         </div>
     </header>
 
+    <!-- ***************      section-1 hero          ***************-->
     <main class="main">
-
-
-        <!-- ***************      section-1 hero          ***************-->
-
-
-        <section class="hero-section">
+        <section class="hero-section section">
             <div class="container">
                 <H1 class="hero-title">Effective Solutions for Your Business</H1>
                 <button type="button" class="button">Order Service</button>
             </div>
         </section>
 
-
         <!--         ***************        section-2 our advantages        *************** -->
 
-
-        <section class="advantages-section">
+    
+                <section class="advantages-section section">
             <div class="container">
                 <h2 class="visually-hidden">our advantages</h2>
                 <ul class="advantages-list">
@@ -115,15 +116,19 @@
         </section>
 
 
+
         <!-- #######################            our team section-3              ########### -->
 
 
-        <section class="our-team">
+        <section class="our-team section">
             <div class="container">
                 <h2 class="our-team-title">Our Team</h2>
                 <ul class="our-team-list">
                     <li class="list-li">
-                        <img class="our-team-photo" src="./images/Mark-Guerrero.jpg" alt="Mark Guerrero photo" width="264">
+                        <img class="our-team-photo" 
+                            srcset="./images/Mark-Guerrero@2x.jpg"
+                            src="./images/Mark-Guerrero.jpg" 
+                            alt="Mark Guerrero photo" width="264">
                         <div class="name-profession">
                             <h3 class="title-li">Mark Guerrero</h3>
                             <p class="text"> Product Designer</p>
@@ -164,7 +169,11 @@
                         </div>
                     </li>
                     <li class="list-li">
-                        <img class="our-team-photo" src="./images/Tom-Ford.jpg" alt="Tom Ford photo" width="264">
+                        <img class="our-team-photo" 
+                            srcset="./images/Tom-Ford@2x.jpg"
+                            src="./images/Tom-Ford.jpg"
+                            alt="Tom Ford photo"
+                            width="264">
                         <div class="name-profession">
                             <h3 class="title-li">Tom Ford</h3>
                             <p class="text">Frontend Developer</p>
@@ -201,7 +210,11 @@
                         </div>
                     </li>
                     <li class="list-li">
-                        <img class="our-team-photo" src="./images/Camila-Garcia.jpg" alt="Camila Garcia photo" width="264">
+                        <img class="our-team-photo" 
+                            srcset="./images/Camila-Garcia@2x.jpg"
+                            src="./images/Camila-Garcia.jpg" 
+                            alt="Camila Garcia photo"
+                            width="264">
                         <div class="name-profession">
                             <h3 class="title-li">Camila Garcia</h3>
                             <p class="text">Marketing</p>
@@ -238,7 +251,11 @@
                         </div>
                     </li>
                     <li class="list-li">
-                        <img class="our-team-photo" src="./images/Daniel-Wilson.jpg" alt="Daniel Wilson photo" width="264">
+                        <img class="our-team-photo" 
+                            srcset="./images/Daniel-Wilson@2x.jpg"
+                            src="./images/Daniel-Wilson.jpg"
+                            alt="Daniel Wilson photo" 
+                            width="264">
                         <div class="name-profession">
                             <h3 class="title-li">Daniel Wilson</h3>
                             <p class="text">UI Designer</p>
@@ -282,8 +299,8 @@
 
         <!-- ********************our portfolio    section-4 ****** -->
 
-
-        <section id="portfolio" class="portfolio">
+<!--
+        <section id="portfolio" class="portfolio section">
             <div class="container">
                 <h2 class="portfolio-title">Our Portfolio</h2>
                 <ul class="portfolio-list">
@@ -352,11 +369,10 @@
         </section>
     </main>
 
-
+-->
     <!-- *************************** footer ***************************** -->
 
-
-    <footer class="footer">
+<!--    <footer class="footer">
         <div class="container footer-main-div">
             <div class="footer-container footer-container-logo">
                 <a href="./index.html" class="footer-link-logo ">Web<span class="footer-link-logo-studio">Studio</span>
@@ -423,12 +439,66 @@
     </footer>
 
 
+-->
 
-
+<!--=============== mobile menu  ==========================-->
+<div class="mobile-menu">
+    <div class="mobile-menu-conteinet container">
+        <button class="mobile-menu-close-bnt" type="button">
+            <svg class="mobile-menu-close-bnt-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <nav>
+            <ul class="mobile-menu-nav-list">
+                <li class="mobile-menu-nav-item"><a class="mobile-menu-nav-item-link" href="">Studio</a></li>
+                <li class="mobile-menu-nav-item"><a class="mobile-menu-nav-item-link" href="">portfolio</a></li>
+                <li class="mobile-menu-nav-item"><a class="mobile-menu-nav-item-link" href="">contacts</a></li>
+            </ul>    
+        </nav>
+        <address class="mobile-menu-address">
+            <ul class="mobile-menu-address-list">
+                <li class="mobile-menu-address-item"><a class="mobile-menu-address-item-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                <li class="mobile-menu-address-item"><a class="mobile-menu-address-item-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            </ul>    
+        </address>
+        <ul class="mobile-menu-social">
+                            <li class="mobile-menu-social-lnk">
+                                <a class="mobile-menu-social-links" href="https://www.instagram.com/" target="_blank" >
+                                    <svg class="mobile-menu-social-links-icon" width="24" height="24" aria-label="instagram-link">
+                                        <use href="./images/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="mobile-menu-social-lnk">
+                                <a class="mobile-menu-social-links" href="https://www.twitter.com/" target="_blank" >
+                                    <svg class="mobile-menu-social-links-icon" width="24" height="24" aria-label="twitter-link">
+                                        <use href="./images/icons.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="mobile-menu-social-lnk">
+                                <a class="mobile-menu-social-links" href="https://www.facebook.com/" target="_blank">
+                                    <svg class="mobile-menu-social-links-icon" width="24" height="24" aria-label="facebook-link">
+                                        <use href="./images/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="mobile-menu-social-lnk">
+                                <a class="mobile-menu-social-links" href="https://www.linkedin.com/" target="_blank">
+                                    <svg class="mobile-menu-social-links-icon" width="24" height="24" aria-label="linkedin-link">
+                                        <use href="./images/icons.svg#icon-linkedin"></use>
+                                    </svg>
+                                    </a>
+                               </li>
+        
+        </ul>
+    </div>
+</div>
     <!--@@@@@@@@@@@@@  modal window  @@@@@@@@@@@@@@@@@@@@-->
 
 
-
+<!--
 
     <div class="backdrop is-open">
         <div class="modal">
@@ -531,6 +601,7 @@
 
         </div>
     </div>
+    -->
 </body>
 
 </html>
